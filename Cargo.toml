@@ -1,0 +1,15 @@
+[package]
+name = "mbqc-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "mbqc_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+num-complex = "0.4.5"
+numpy = "0.21.0"
+pyo3 = { version = "0.21.1", features = ["abi3-py38", "num-complex"] }
+rayon = "1.10.0"
